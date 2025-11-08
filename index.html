@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2 Lalulu - Interlude</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ===== ESTILO GERAL ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.4em;
+            color: #007bff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        section {
+            padding: 100px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                        url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?auto=format&fit=crop&w=1500&q=80') center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        /* ===== SEÇÕES ===== */
+        .sobre, .downloads, .info, .ranking, .contato {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding: 50px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            section {
+                padding: 80px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== CABEÇALHO ===== -->
+    <header>
+        <nav>
+            <div class="logo">L2 Lalulu</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#info">Informações</a></li>
+                <li><a href="#ranking">Ranking</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <h1>Bem-vindo ao L2 Lalulu</h1>
+        <p>Servidor Lineage 2 Interlude — Experiência única e equilibrada</p>
+        <a href="#downloads" class="btn">Baixar Agora</a>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre o Servidor</h2>
+        <p>O <strong>L2 Lalulu</strong> é um servidor privado de Lineage 2 baseado na crônica <strong>Interlude</strong>, desenvolvido para oferecer uma jogabilidade justa, estável e divertida para todos os tipos de jogadores. Nossa equipe trabalha constantemente para garantir eventos, suporte ativo e uma economia equilibrada.</p>
+    </section>
+
+    <!-- ===== DOWNLOADS ===== -->
+    <section id="downloads" class="downloads">
+        <h2>Downloads</h2>
+        <p>Baixe o cliente e nosso patch oficial abaixo:</p>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1x8rYkkGSnZxbEpfIwWNQgYpLuj5-bWj9/view?usp=drive_link" class="btn">Download Cliente</a></li>
+            <li><a href="https://drive.google.com/file/d/1O9Z3bRjcDgmnKoBtVNEnqtWN6ifPMyuc/view?usp=drive_link" class="btn">Download Patch L2 Lalulu</a></li>
+        </ul>
+    </section>
+
+    <!-- ===== INFORMAÇÕES ===== -->
+    <section id="info" class="info">
+        <h2>Informações & Regras</h2>
+        <ul>
+            <li>Rate XP/SP: x50</li>
+            <li>Rate Adena: x30</li>
+            <li>Rate Drop/Spoil: x20</li>
+            <li>Eventos automáticos e semanais</li>
+            <li>Sem pay-to-win — todos têm chance!</li>
+        </ul>
+    </section>
+
+    <!-- ===== RANKING ===== -->
+    <section id="ranking" class="ranking">
+        <h2>Ranking (Exemplo)</h2>
+        <p>Exibição visual (não funcional)</p>
+        <ul>
+            <li>1️⃣ Jogador1 — Level 80 — Clan: Glory</li>
+            <li>2️⃣ Jogador2 — Level 78 — Clan: Shadows</li>
+            <li>3️⃣ Jogador3 — Level 76 — Clan: Knights</li>
+        </ul>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="contato">
+        <h2>Contato & Links</h2>
+        <p>Entre em contato conosco:</p>
+        <ul>
+            <li>Discord: <a href="#">discord.gg/lalulu</a></li>
+            <li>Facebook: <a href="#">fb.com/L2Lalulu</a></li>
+            <li>Email: suporte@l2lalulu.com</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2025 L2 Lalulu - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
